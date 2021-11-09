@@ -31,7 +31,7 @@ const Header = () => {
             <ul className="social-icons">
               <li>
                 <a href="#">
-                  <i className="bi bi-facebook"></i>
+                  <i className=" fab fa-facebook-f"></i>
                 </a>
               </li>
               <li>  
@@ -56,5 +56,4 @@ const Header = () => {
     </>
   );
 };
-
 export default Header;
