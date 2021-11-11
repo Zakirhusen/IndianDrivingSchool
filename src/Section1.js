@@ -24,34 +24,41 @@ const Section1 = () => {
 
         <div className="total-data-container dflex-all">
           <div className="total-data dflex-all">
+          <div className="dflex-all total-data-items">
+              
+            </div>
             <div className="dflex-all total-data-items">
               <i className="fa fa-business-time"></i>
               <div className="data">
-              <h4>20</h4>
-              <p>working years</p>
+                <h4>20</h4>
+                <p>working years</p>
               </div>
             </div>
             <div className="dflex-all total-data-items">
               <i className="far fa-clock"></i>
               <div className="data">
-              <h4>3400</h4>
-              <p>training hours</p>
+                <h4>3400</h4>
+                <p>training hours</p>
               </div>
             </div>
             <div className="dflex-all total-data-items">
               <i className="fas fa-address-card"></i>
               <div className="data">
-              <h4>5000+</h4>
-              <p>license issued</p>
+                <h4>5000+</h4>
+                <p>license issued</p>
               </div>
             </div>
             <div className="dflex-all total-data-items">
               <i className="fas fa-users"></i>
               <div className="data">
-              <h4>5</h4>
-              <p>teachers</p>
+                <h4>5</h4>
+                <p>teachers</p>
               </div>
             </div>
+            <div className="dflex-all total-data-items">
+              
+            </div>
+            
           </div>
         </div>
       </div>

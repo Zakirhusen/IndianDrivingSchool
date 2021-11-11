@@ -14,6 +14,8 @@ body {
 
 :root {
   --primary-color: #fdc400;
+  --border: 2px solid rgb(255, 187, 0);
+ --box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 /* utility classes */
 .dflex {
@@ -84,7 +86,6 @@ address:hover a,
 .address a span {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  
 }
 address:hover .bi-telephone-outbound.bi::before {
   /* animation properties */
@@ -106,9 +107,10 @@ address:hover .bi-telephone-outbound.bi::before {
 
 /* header bottom means Navbar style */
 .navbar-main {
+  /* border: var(--border); */
   background: white;
   z-index: 102;
-  width: 100vw;
+  width: 100%;
   justify-content: space-around;
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
   position: sticky;
@@ -313,7 +315,7 @@ address:hover .bi-telephone-outbound.bi::before {
   /* z-index: -1; */
 }
 .total-data-container::before {
-  content: "";
+  /* content: "";
   position: absolute;
   background: rgb(92, 90, 90, 0.4);
   background: rgba(32, 31, 31, 0.4);
@@ -324,10 +326,10 @@ address:hover .bi-telephone-outbound.bi::before {
   z-index: 100;
   color: white;
   width: 10%;
-  transform: skewX(-22deg);
+  transform: skewX(-22deg); */
 }
 .total-data {
-  width: 80%;
+  width: 100%;
   height: 100%;
   align-items: center;
   justify-content: cneter;
@@ -363,7 +365,7 @@ address:hover .bi-telephone-outbound.bi::before {
 .total-data-items h4 {
   font-weight: 400;
 }
-.total-data div:nth-child(odd):before {
+.total-data div:nth-child(even):before {
   background: none;
 }
 
@@ -461,57 +463,245 @@ address:hover .bi-telephone-outbound.bi::before {
   /* border: 2px solid red; */
   color: white;
 }
-.section2-bottom h2{
-  font-size: 2.3rem;
+.section2-bottom h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
 }
-.section2-bottom h2 span{
-color: var(--primary-color);
+.section2-bottom h2 span {
+  color: var(--primary-color);
 }
-.section2-bottom p{
-font-weight: Thin 100;
-font-family: "Raleway", sans-serif;
-letter-spacing: .05rem;
-  font-size: 1.2rem;
+.section2-bottom p {
+  font-weight: Thin 100;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
 }
-.section2-bottom p.tel{
+.section2-bottom p.tel {
   font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
-.section2-bottom p.tel{
-  
+.section2-bottom p.tel {
   font-size: 2rem;
-
 }
 /* .section2-bottom-icon{
   border: 2px solid red;
   height: 100%;
 } */
-.section2-bottom-icon img{
+.section2-bottom-icon img {
   height: 100%;
-  /* width: 3rem; */
 }
 
-/* Section3 Moving car */
-.section3-moving-car-container{
-  height: 50rem;
+/*````````````````````` Section3 Moving car Styling```````````````````*/
+.section3-moving-car-container {
+  height: 40rem;
   width: 100%;
-  /* background: rgba(240, 218, 218, 0.678); */
+  overflow-x: hidden;
   position: relative;
-  overflow: hidden;
-  z-index: -1;
-
-  background: url(./images/citybg2.jpg)  center center/cover repeat  ;
 }
-  .section3-moving-car-container .moving-car{
-    position: absolute;
-    bottom: 3rem;
-    left: 50%;
-    transform: translateX(-40%);
-    height:25rem;
-    width: 45rem;
-    background: url(./images/carObj.png) center center/cover;
-    /* border: 2px solid red; */
-    /* background: red; */
-    z-index: 1;
+.section3-moving-car-container .road-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  /* left: 0; */
+  right: 0;
+  z-index: -1;
+  transition: all linear 10s;
+  background: url(./images/citybg2.jpg);
+  background-position: left bottom;
+  /* background-position: 3200px bottom; */
+
+  background-repeat: repeat-x;
+  animation: movingCity 10s linear infinite;
+}
+@keyframes movingCity {
+  /* 0% {
+    transform: translateX(-0px);
   }
+  10% {
+    transform: translateX(320px);
+  }
+  20% {
+    transform: translateX(640px);
+  }
+  30% {
+    transform: translateX(960px);
+  }
+  40% {
+    transform: translateX(1280px);
+  }
+  50% {
+    transform: translateX(1600px);
+  }
+  60% {
+    transform: translateX(1920px);
+  }
+  70% {
+    transform: translateX(2240px);
+  }
+  80% {
+    transform: translateX(2560px);
+  }
+  90% {
+    transform: translateX(2880px);
+  } */
+  100% {
+    /* transform: translateX(3200px); */
+    background-position: 3200px bottom;
+  }
+}
+.section3-moving-car-container .moving-car {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-40%);
+  height: 50%;
+  width: 45%;
+  background: url(./images/carObj.png) center center/contain no-repeat;
+  /* border: var(--border); */
+  /* background: red; */
+  animation: carUpDown 1s infinite linear;
+  z-index: 1;
+}
+
+/* .section3-moving-car-container .moving-car img{
+      height: 100% ;
+      border: var(--border);
+      width: 100%;
+    } */
+.wheels {
+  height: 4.5rem;
+  width: 4.5rem;
+  position: absolute;
+  z-index: 3;
+}
+.wheels img {
+  height: 100%;
+  width: 100%;
+}
+.wheels.right-wheel {
+  bottom: 95px;
+  left: 598px;
+  animation: wheelRotate 0.6s infinite linear;
+}
+.wheels.left-wheel {
+  bottom: 95px;
+  left: 900px;
+  animation: wheelRotate 0.6s infinite linear;
+}
+@keyframes wheelRotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.limiter {
+  height: 10rem;
+  z-index: 4;
+  width: 100%;
+  position: absolute;
+  /* border: var(--border); */
+  bottom: 0;
+  right: 0;
+  background: url(./images/limiter.png);
+  background-position: 0 bottom;
+
+  transition: all ease-in-out 10s;
+  /* background: url(./images/citybg2.jpg) center center/contain; */
+  background-repeat: repeat-x;
+  animation: movingLimiter 10s linear infinite;
+}
+@keyframes movingLimiter {
+  100% {
+    /* transform: translateX(100%); */
+    background-position: 3200px bottom;
+  }
+}
+
+/* ``````````````````````````````Section4 styling```````````````````````````` */
+.section4-heading{
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.section4-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.section4-container .item {
+  background: #f8f8e573;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: var(--border); */
+  padding: 2rem;
+  height: 20rem;
+  /* border-radius: 5px; */
+  box-shadow: 0 1px 1px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 24%);
+  width: 25%;
+}
+.section4-container .item h3{
+text-transform: uppercase;
+font-size: 1rem;
+
+}
+.section4-container .item .description{
+text-align: center;
+color: #09242b9a;
+line-height: 1.5rem;
+letter-spacing: .02rem;
+
+}
+.section4-container .item .icon {
+  height: 4rem;
+  width: 4rem;
+}
+.section4-container .item .icon img {
+  height: 100%;
+  width: 100%;
+  /* opacity: ; */
+  
+}
+.section4-container .item:nth-child(even){
+  background: none;
+}
+.section4-container .item:nth-child(5){
+  background: none;
+}
+.section4-container .item:nth-child(6){
+  background: none;
+  background: #f8f8e573;
+}
+.section4-container .item:nth-child(7){
+  background: none;
+  /* background: #f8f8e573; */
+
+}
+.section4-container .item:nth-child(8){
+  /* background: none; */
+  background: #f8f8e573;
+
+}
+.section4-container .item:hover  {
+  animation: shaking 0.2s linear 1;
+
+}
+
+@keyframes shaking {  
+
+  0% {
+    transform: translateX(2px);
+  }
+  25% {
+    transform: translateX(-2px);
+    /* transform: translateX(0); */
+  }
+  50% {
+   
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
