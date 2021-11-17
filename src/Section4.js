@@ -49,6 +49,7 @@ const dataArray = [
 const Section4 = () => {
   return (
     <>
+    
       <h1 className='dflex-all section4-heading'>Why Choose Us?</h1>
       <div className="section4-container dflex">
         {dataArray.map((dataItem) => {

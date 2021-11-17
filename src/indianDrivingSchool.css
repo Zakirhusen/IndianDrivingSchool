@@ -173,9 +173,10 @@ address:hover .bi-telephone-outbound.bi::before {
   }
 }
 
-/* section1 styling */
+/* ```````````````````````````````````````section1 styling ``````````````````````````````````````*/
 .section1 {
   flex-direction: column;
+  overflow: hidden;
 }
 .img-container {
   flex-direction: column;
@@ -221,7 +222,6 @@ address:hover .bi-telephone-outbound.bi::before {
   text-transform: capitalize;
   animation: sliding 30s forwards infinite;
   transform: translateY(300%);
-
   animation-delay: -2s;
 }
 
@@ -630,7 +630,7 @@ address:hover .bi-telephone-outbound.bi::before {
   flex-wrap: wrap;
 }
 .section4-container .item {
-  background: #f8f8e573;
+  background: #f9fafb;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -671,16 +671,16 @@ letter-spacing: .02rem;
 }
 .section4-container .item:nth-child(6){
   background: none;
-  background: #f8f8e573;
+  background: #f9fafb;
 }
 .section4-container .item:nth-child(7){
   background: none;
-  /* background: #f8f8e573; */
+  /* background: #f9fafb; */
 
 }
 .section4-container .item:nth-child(8){
   /* background: none; */
-  background: #f8f8e573;
+  background: #f9fafb;
 
 }
 .section4-container .item:hover  {
@@ -704,4 +704,93 @@ letter-spacing: .02rem;
   100% {
     transform: translateX(-2px);
   }
+}
+
+/* ```````````````````````````````````````````section-5 styling`````````````````````````````````````` */
+.section5-container{
+  flex-direction: column;
+  align-items: center;
+  height: 60rem;
+  width: 100%;
+  background: #f9fafb;
+  /* border:var(--border); */
+}
+.price-table{
+  width: 80%;
+  margin: 5rem auto;
+}
+.price-table h2{
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  margin-bottom: 1.5rem;
+}
+.price-table p{
+  color: #969594;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+.section5-container-wrapper{
+  width: 80%;
+  /* border: var(--border); */
+}
+.price-table-container:nth-child(2){
+  height: 105%;
+  border: var(--border);
+  border-width: .5rem;
+}
+.price-table-container{
+  /* height: 40rem; */
+  background: white;
+  box-shadow: 0 4px 20px rgb(81 127 160 / 13%);
+  width: 29%;
+  text-align: center;
+  flex-direction: column  ;
+  justify-content: space-around;
+  /* border:var(--border); */
+  padding: 2rem;
+}
+.course-name { 
+  justify-content: space-around;
+  /* justify-content: space-between; */
+  align-items: center;
+
+}
+.course-name h2{ 
+  font-size: 2.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+
+}
+.course-name span{
+  display: inline-block;
+  height: 2.9px;
+  width: 20%;
+  margin: 0.1rem 0;
+  background-color:  var(--primary-color);
+}
+
+.price-table__feature-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.price-table__feature-list li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .2rem 0;
+  height: 3rem;
+  font-size: 1.1rem;
+  color: #969594;
+  
+}
+.price-table__feature-list li:nth-child(odd){ 
+  background-color: #f9fafb;
+}
+li .btn-section2{
+  margin-left: auto;
+  width: 12rem;
 }
