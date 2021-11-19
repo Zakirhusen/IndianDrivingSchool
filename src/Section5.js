@@ -36,7 +36,7 @@ const Section5 = () => {
             </ul>
           </div>
           <div className=" price-table-container justify-content dflex">
-            <p style={{color:"#fdc400"}}>&#9733; BEST SELLER &#9733;</p>
+            <p style={{ color: "#fdc400" }}>&#9733; BEST SELLER &#9733;</p>
             <div className="course-name dflex">
               <span className="heading-line"></span>
               <h2>&#8377;4500</h2>

@@ -87,7 +87,7 @@ address:hover a,
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
-address:hover .bi-telephone-outbound.bi::before {
+address:hover .bi-telephone-outbound.bi::before{
   /* animation properties */
   animation-name: my-animation;
   animation-duration: 0.05s;
@@ -793,4 +793,166 @@ letter-spacing: .02rem;
 li .btn-section2{
   margin-left: auto;
   width: 12rem;
+}
+
+/* ```````````````````````````footer section `````````````````````````````````*/
+.footer-main{
+  height: 25rem;
+  border:var(--border);
+  background:url(./images/bgimg.jpg) center center repeat;
+  color: rgb(207, 205, 205);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-item-container{
+  width: 80%;
+  height: 70%;
+  /* margin: 0 auto;s */
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+
+}
+.footer-item{
+  /* border: var(--border); */
+  width: 25%;
+  height: 100%;
+}
+
+.footer-item:nth-child(2) {
+width: 40%;
+}
+
+.footer-item.logo-footer{
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.logo-img-footer{
+  width: 100%;
+  margin: 0 auto;
+}
+.logo-img-footer img{
+  width: 85%;
+  /* border: var(--border); */
+}
+
+.footer-item.information{
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.footer-item.information .info,.footer-item.information .customer-service{
+  flex-direction: column;
+  margin-top: 2rem;
+  
+}
+.footer-item.information h3{
+color: var(--primary-color);
+font-size: 1.4rem;
+}
+.footer-item.information span{
+  display: inline-block;
+height: 70%;
+margin: auto ;
+width: 1px;
+background-color: rgb(128, 124, 124);
+}
+.footer-item.information ul li {
+list-style: none;
+margin: 1rem 0;
+}
+
+.footer-item.information ul li:hover a {
+color: var(--primary-color);
+}
+.footer-item.information ul li a{
+  text-decoration: none;
+  /* color: white; */
+  color: rgb(229, 226, 226);
+}
+
+
+.phone-social-icon-footer{
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer-item .contact-footer{
+  background: white;
+  border-radius: 10px;
+  width: 80%;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-around;
+}
+.footer-item .contact-footer a{
+text-decoration: none ;
+color: rgb(29, 29, 29);
+}
+.phone-footer{
+  font-size: 1.3rem;
+}
+.phone-footer span{
+  margin: 0 .6rem;
+}
+.phone-footer:hover .bi-telephone-outbound.bi::before{
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  animation: my-animation 0.08s alternate infinite linear;
+  
+}
+.address.address-footer a{
+  font-size: 0.9rem;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.footer-item .contact-footer .logo-img-footer-right img{
+width: 100%;
+}
+
+.social-icons-footer ul li a i{
+color:black;
+font-size: 1.2rem;
+  z-index: 2;
+  font-weight: bold;
+}
+.social-icons-footer ul li a{
+  height: 100%;
+display: flex;
+justify-content: center;
+  align-items: center;
+}
+.social-icons-footer ul li{
+  position: relative;
+  height: 2.3rem;
+  width: 2.3rem;
+  /* text-align: center; */
+}
+.social-icons-footer ul li:hover i {
+  color: white;
+}
+.social-icons-footer ul li:hover li::before{
+  background:  rgb(248, 0, 0);
+  display: none;
+  z-index: 0;
+}
+.social-icons-footer ul li::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.3rem;
+  background: var(--primary-color);
+  width: 2.3rem;
+  /* border: var(--border); */
+  z-index: 0;
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
+
+.copyright{
+  margin-left:10% ;
+  align-self: flex-start;
 }
