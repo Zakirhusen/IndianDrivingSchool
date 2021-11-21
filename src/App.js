@@ -7,17 +7,21 @@ import Section3 from "./Section3.js";
 import Section4 from "./Section4.js";
 import Section5 from "./Section5.js";
 import Footer from "./Footer.js";
+import AboutUs from "./AboutUs.js";
 const App = () => {
     return (
         <>
-        <Header/>
-        <Navbar/>
+         <Header/>
+         <Navbar/>
+        {/*
         <Section1/>
         <Section2/>
         <Section3/>
         <Section4/>
         <Section5/>
-        <Footer/>
+        */}
+        <AboutUs/>
+        <Footer/> 
         </>
     )
 }
