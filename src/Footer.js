@@ -60,7 +60,7 @@ const Footer = () => {
               <ul className="social-icons">
                 <li>
                   <a href="#">
-                    <i className=" fab fa-facebook-f"></i>
+                    <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
@@ -100,7 +100,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="copyright">© 2017 Safe Drive Driving School.</p>
+        <p className="copyright">© 2021 Safe Drive Driving School.</p>
       </div>
     </>
   );

@@ -8,6 +8,7 @@ import Section4 from "./Section4.js";
 import Section5 from "./Section5.js";
 import Footer from "./Footer.js";
 import AboutUs from "./AboutUs.js";
+import Contact from "./Contact.js";
 const App = () => {
     return (
         <>
@@ -20,7 +21,8 @@ const App = () => {
         <Section4/>
         <Section5/>
         */}
-        <AboutUs/>
+        {/* <AboutUs/> */}
+        <Contact/>
         <Footer/> 
         </>
     )
