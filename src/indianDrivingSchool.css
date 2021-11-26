@@ -429,7 +429,7 @@ address:hover .bi-telephone-outbound.bi::before {
   border-radius: 50%;
 }
 .btn-section2 {
-  height: 6.2rem;
+  height: 3.2rem;
   width: 11rem;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -790,7 +790,7 @@ li .btn-section2 {
 /* ```````````````````````````footer section `````````````````````````````````*/
 .footer-main {
   height: 25rem;
-  border: var(--border);
+  /* border: var(--border); */
   background: url(./images/bgimg.jpg) center center repeat;
   color: rgb(207, 205, 205);
   flex-direction: column;
@@ -1030,7 +1030,7 @@ li .btn-section2 {
 .aboutUs-statistics {
   position: relative;
   width: 100%;
-  border: var(--border);
+  /* border: var(--border); */
   /* background: rgb(153, 152, 152); */
   background-color: rgba(66, 66, 66, 0.55);
   height: 40rem;

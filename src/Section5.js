@@ -19,18 +19,18 @@ const Section5 = () => {
               <h2>&#8377; 2500</h2>
               <span className="heading-line"></span>
             </div>
-            <ul class="price-table__feature-list">
-              <li class="price-table__feature-item">
+            <ul className="price-table__feature-list">
+              <li className="price-table__feature-item">
                 <h3>BASIC PLAN</h3>
               </li>
-              <li class="price-table__feature-item">Full course theory</li>
-              <li class="price-table__feature-item">Full driving course</li>
-              <li class="price-table__feature-item">SMS reminders</li>
-              <li class="price-table__feature-item">Training in first aid</li>
-              <li class="price-table__feature-item">Practical sessions</li>
-              <li class="price-table__feature-item">-</li>
-              <li class="price-table__feature-item">-</li>
-              <li class="price-table__feature-item">
+              <li className="price-table__feature-item">Full course theory</li>
+              <li className="price-table__feature-item">Full driving course</li>
+              <li className="price-table__feature-item">SMS reminders</li>
+              <li className="price-table__feature-item">Training in first aid</li>
+              <li className="price-table__feature-item">Practical sessions</li>
+              <li className="price-table__feature-item">-</li>
+              <li className="price-table__feature-item">-</li>
+              <li className="price-table__feature-item">
                 <button className="btn-section2">Send Request</button>
               </li>
             </ul>
@@ -42,18 +42,18 @@ const Section5 = () => {
               <h2>&#8377;4500</h2>
               <span className="heading-line"></span>
             </div>
-            <ul class="price-table__feature-list">
-              <li class="price-table__feature-item">
+            <ul className="price-table__feature-list">
+              <li className="price-table__feature-item">
                 <h3>Popular</h3>
               </li>
-              <li class="price-table__feature-item">Full course theory</li>
-              <li class="price-table__feature-item">Full driving course</li>
-              <li class="price-table__feature-item">With driving license</li>
-              <li class="price-table__feature-item">In traffic training</li>
-              <li class="price-table__feature-item">Practical sessions</li>
-              <li class="price-table__feature-item">SMS reminders</li>
-              <li class="price-table__feature-item">-</li>
-              <li class="price-table__feature-item">
+              <li className="price-table__feature-item">Full course theory</li>
+              <li className="price-table__feature-item">Full driving course</li>
+              <li className="price-table__feature-item">With driving license</li>
+              <li className="price-table__feature-item">In traffic training</li>
+              <li className="price-table__feature-item">Practical sessions</li>
+              <li className="price-table__feature-item">SMS reminders</li>
+              <li className="price-table__feature-item">-</li>
+              <li className="price-table__feature-item">
                 <button className="btn-section2">Send Request</button>
               </li>
             </ul>
@@ -64,18 +64,18 @@ const Section5 = () => {
               <h2>&#8377; 5500</h2>
               <span className="heading-line"></span>
             </div>
-            <ul class="price-table__feature-list">
-              <li class="price-table__feature-item">
+            <ul className="price-table__feature-list">
+              <li className="price-table__feature-item">
                 <h3>PRO PLAN</h3>
               </li>
-              <li class="price-table__feature-item">Full course theory</li>
-              <li class="price-table__feature-item">Full driving course</li>
-              <li class="price-table__feature-item">With driving license</li>
-              <li class="price-table__feature-item">In traffic training</li>
-              <li class="price-table__feature-item">Training in first aid</li>
-              <li class="price-table__feature-item">Practical sessions</li>
-              <li class="price-table__feature-item">SMS reminders</li>
-              <li class="price-table__feature-item">
+              <li className="price-table__feature-item">Full course theory</li>
+              <li className="price-table__feature-item">Full driving course</li>
+              <li className="price-table__feature-item">With driving license</li>
+              <li className="price-table__feature-item">In traffic training</li>
+              <li className="price-table__feature-item">Training in first aid</li>
+              <li className="price-table__feature-item">Practical sessions</li>
+              <li className="price-table__feature-item">SMS reminders</li>
+              <li className="price-table__feature-item">
                 <button className="btn-section2">Send Request</button>
               </li>
             </ul>

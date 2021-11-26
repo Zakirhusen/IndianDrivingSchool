@@ -31,7 +31,6 @@ function Contact() {
     <>
       <div className="contact-main dflex-all flex-col">
         <h1>contacts</h1>
-        <hr />
         <div className="contact dflex-all">
           <form className="contact-form" onSubmit={submitHandler}>
             <div className="dflex flex-col">

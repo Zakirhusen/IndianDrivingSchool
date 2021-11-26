@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,10 +12,10 @@ const Navbar = () => {
           <div className="navbar ">
             <ul className="nav-item-container justify-content-space-bet dflex align-items">
               <li>
-                <a href="#" data-hover='home'>home</a>
+                <NavLink to="/" data-hover='home'>home</NavLink>
               </li>
               <li>
-                <a href="#" data-hover='about us'>about us</a>
+                <NavLink to="/about" data-hover='about us'>about us</NavLink>
               </li>
               <li>
                 <a href="#" data-hover='programs'>programs</a>
@@ -23,7 +24,7 @@ const Navbar = () => {
                 <a href="#" data-hover='testimonials'>testimonials</a>
               </li>
               <li>
-                <a href="#" data-hover='contact us'>contact us</a>
+                <NavLink to="/contact" data-hover='contact'>Contact</NavLink>
               </li>
             </ul>
           </div>

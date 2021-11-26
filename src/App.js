@@ -1,31 +1,25 @@
-import React from 'react'
+import React from "react";
+import { Route, Routes, Switch } from "react-router-dom";
 import Header from "./Header.js";
 import Navbar from "./Navbar.js";
-import Section1 from "./Section1.js";
-import Section2 from "./Section2.js";
-import Section3 from "./Section3.js";
-import Section4 from "./Section4.js";
-import Section5 from "./Section5.js";
-import Footer from "./Footer.js";
+import Home from "./Home.js";
 import AboutUs from "./AboutUs.js";
 import Contact from "./Contact.js";
-const App = () => {
-    return (
-        <>
-         <Header/>
-         <Navbar/>
-        {/*
-        <Section1/>
-        <Section2/>
-        <Section3/>
-        <Section4/>
-        <Section5/>
-        */}
-        {/* <AboutUs/> */}
-        <Contact/>
-        <Footer/> 
-        </>
-    )
-}
+import Footer from "./Footer.js";
 
-export default App
+const App = () => {
+  return (
+    <>
+      <Header />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<AboutUs />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </>
+  );
+};
+
+export default App;
