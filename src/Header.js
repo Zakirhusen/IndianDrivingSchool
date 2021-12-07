@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
+  const [arrow, setArrow] = useState(true)
+  const [width, setWidth] = useState(window.innerWidth)
+  const updateDimensions = () => {
+    const width = window.innerWidth
+    setWidth(width)
+    // console.log(width)
+  }
+  window.addEventListener('resize', updateDimensions)
   return (
     <>
       <header className="header">
-        <div className="header-wrap">
+        <div className= {`header-wrap ${(!arrow|width>1080)?'active':'inActive'}`}>
           <div className="header-top dflex align-items">
             <address className="address">
               <a href="www.google.com">
@@ -34,7 +42,7 @@ const Header = () => {
                   <i className=" fab fa-facebook-f"></i>
                 </a>
               </li>
-              <li>  
+              <li>
                 <a href="#">
                   <i className="bi bi-twitter"></i>
                 </a>
@@ -51,6 +59,11 @@ const Header = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div className={`arrow dflex-all flex-col ${width<1080?'active':' inActive'}`} onClick={()=>setArrow(!arrow)}
+>
+          <i className={`bi bi-chevron-down ${arrow?'active':'inActive'}`} ></i>
+          <i className={`bi bi-chevron-up ${arrow?'inActive':'active'}`} ></i>
         </div>
       </header>
     </>

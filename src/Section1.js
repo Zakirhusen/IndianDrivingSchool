@@ -24,9 +24,6 @@ const Section1 = () => {
 
         <div className="total-data-container dflex-all">
           <div className="total-data dflex-all">
-          <div className="dflex-all total-data-items">
-              
-            </div>
             <div className="dflex-all total-data-items">
               <i className="fa fa-business-time"></i>
               <div className="data">
@@ -55,10 +52,6 @@ const Section1 = () => {
                 <p>teachers</p>
               </div>
             </div>
-            <div className="dflex-all total-data-items">
-              
-            </div>
-            
           </div>
         </div>
       </div>
