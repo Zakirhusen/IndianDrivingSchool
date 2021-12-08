@@ -1,11 +1,12 @@
 import React from "react";
+import carImg  from "./images/bg2.png"
 
 const Section2 = () => {
   return (
     <>
       <div className="section2-container dflex-all">
         <div className="section2-img dflex-all ">
-          <img src="./images/bg2.png" alt="" />
+          <img src={carImg} alt="" />
         </div>
         <div className="section2-text dflex">
           <h1>Are you ready?</h1>

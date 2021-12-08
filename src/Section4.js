@@ -1,15 +1,18 @@
 import React from "react";
+import icon1 from "./images/icon-prize.png";
+import icon2 from "./images/icon-time.png";
+
 const dataArray = [
   {
     heading: "BEST SERVICE",
     description: "Provides the best service to be expert in driving",
-    imgSrc: "./images/icon-prize.png",
+    imgSrc: {icon1},
   },
   {
     heading: "BEST TIME TRAINING",
     description:
       "You can choose your team on weekdays after work or on weekends",
-    imgSrc: "./images/icon-time.png",
+    imgSrc: {icon2},
   },
   {
     heading: "WE TRAIN ALL AGES",
