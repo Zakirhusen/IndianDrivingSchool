@@ -227,19 +227,19 @@ address:hover .bi-telephone-outbound.bi::before {
 }
 @keyframes imgSlider {
   0% {
-    background: url("./images/bg2.jpg") center center/cover;
+    /* background: url("./images/bg2.jpg") center center/cover; */
   }
   45% {
-    background: url("./images/bg2.jpg") center center/cover;
+    /* background: url("./images/bg2.jpg") center center/cover; */
   }
   50% {
-    background: url("./images/bg.avif") center center/cover;
+    /* background: url("./images/bg.avif") center center/cover; */
   }
   95% {
-    background: url("./images/bg.avif") center center/cover;
+    /* background: url("./images/bg.avif") center center/cover; */
   }
   100% {
-    background: url("./images/bg2.jpg") center center/cover;
+    /* background: url("./images/bg2.jpg") center center/cover; */
   }
 }
 .color {
