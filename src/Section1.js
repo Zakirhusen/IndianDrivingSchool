@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Section1 = () => {
+
+  useEffect(() => {
+    let dataItems= document.querySelectorAll('.total-data-items');
+    let dataItemsLen=dataItems.length;
+    let i=0;
+    setInterval(() => {
+      dataItems.forEach(element => {
+        element.classList.remove('inActive')
+      });
+      dataItems[i%dataItemsLen].classList.add('inActive')
+      dataItems[(i+1)%dataItemsLen].classList.add('inActive')
+      i++;
+    }, 4000);
+  }, [])
   return (
     <>
       <div className="section1 dflex justify-items align-items">

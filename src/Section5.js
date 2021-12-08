@@ -9,54 +9,71 @@ const Section5 = () => {
   };
   window.addEventListener("resize", updateDimensions);
   // let tableSlide = document.querySelectorAll(".price-table-container");
-  // useEffect(() => {
-  //   let interval;
-  //   let tableSlide = document.querySelectorAll(".price-table-container");
-  //   console.log(tableSlide);
-  //   let i = 1;
-  //   if (width < 750) {
-  //     interval = setInterval(() => {
-  //       tableSlide.forEach((slide, index) => {
-  //         slide.classList.add("inActive");
-  //       });
-  //       tableSlide[i % 3].classList.remove("inActive");
-  //       i++;
-  //     }, 3000);
-  //   }
-  //   }, []);
-  //     tableSlide.forEach((element) => {
-  //       let animStop = () => {
-  //         // console.log("mouse hover");
-  //         clearInterval(interval);
-  //       };
-  //       element.addEventListener("mouseover", animStop);
-  //     });
+  useEffect(() => {
+    let interval;
+    let tableSlide = document.querySelectorAll(".price-table-container");
+    console.log(tableSlide);
+    // let i = 1;
+    // if (width < 750) {
+      // interval = setInterval(() => {
+      //   tableSlide.forEach((slide, index) => {
+      //     slide.classList.add("inActive");
+      //   });
+      //   tableSlide[i % 3].classList.remove("inActive");
+      //   i++;
+      // }, 3000);
+      // tableSlide.forEach((element) => {
+      //   let animStop = () => {
+      //     // console.log("mouse hover");
+      //     clearInterval(interval);
+      //   };
+      //   element.addEventListener("mouseover", animStop);
+      // });
 
-  //     tableSlide.forEach((element) => {
-  //       let animStop = () => {
-  //       console.log(element);
-  //       // clearInterval(interval);
-  //       console.log("mouse hover");
-  //       element.classList.add("none");
-  //     };
-  //     let animStart = () => {
-  //       console.log(element);
-  //       console.log("mouseout");
-  //       element.classList.remove("none");
-  //       i = 1;
-  //       interval = setInterval(() => {
-  //         tableSlide.forEach((slide, index) => {
-  //           slide.classList.add("inActive");
-  //         });
-  //         tableSlide[i%3].classList.remove("inActive");
-  //         i++;
-  //       }, 4000);
-  //     };
-  //     // element.addEventListener("mouseover", animStop);
-  //     // element.addEventListener("mouseout", animStart);
-  //   });
-  // }
-  // }, [width]);
+      tableSlide.forEach((element) => {
+        let mouseInAnimStop = (e) => {
+          console.log(element);
+          console.log("mouse hover");
+          tableSlide.forEach((element) => {
+            element.classList.add("none");
+          });
+        };
+        let mouseOutAnimStart = () => {
+          // console.log(element);
+          // console.log("mouseout");
+      //     tableSlide.forEach((element) => {
+      //       element.classList.remove("none");
+      //   element.classList.remove('width-none')
+      // });
+          // i = 1;
+          // interval = setInterval(() => {
+          //   tableSlide.forEach((slide, index) => {
+          //     // slide.classList.add("inActive");
+          //   });
+          //   // tableSlide[i%3].classList.remove("inActive");
+          //   i++;
+          // }, 4000);
+        };
+        // tableSlide.forEach(element => {
+
+        element.addEventListener("mouseover", (e) => {
+          // console.log(e);
+          console.log("mouse hover");
+          tableSlide.forEach((element) => {
+            element.classList.add("none");
+          });
+          element.classList.add('width-none')
+        });
+        element.addEventListener("mouseout", (e)=>{
+          tableSlide.forEach((element) => {
+            element.classList.remove("none");
+        element.classList.remove('width-none')
+      });
+        });
+        // });
+      });
+    // }
+  }, []);
   return (
     <>
       <div className="section5-container dflex ">
