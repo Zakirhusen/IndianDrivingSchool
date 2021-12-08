@@ -7,7 +7,7 @@ const NavbarMenu = (props) => {
       <div className={`navbar ${props.displayState}`}>
         <ul className="nav-item-container justify-content-space-bet dflex align-items">
           <li>
-            <NavLink to="" data-hover="home">
+            <NavLink to="/" data-hover="home">
               home
             </NavLink>
           </li>
