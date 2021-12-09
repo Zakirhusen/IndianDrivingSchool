@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/IndianDrivingSchool/static/css/main.6f387c95.chunk.css",
-    "main.js": "/IndianDrivingSchool/static/js/main.c29465bd.chunk.js",
-    "main.js.map": "/IndianDrivingSchool/static/js/main.c29465bd.chunk.js.map",
+    "main.js": "/IndianDrivingSchool/static/js/main.18064f3f.chunk.js",
+    "main.js.map": "/IndianDrivingSchool/static/js/main.18064f3f.chunk.js.map",
     "runtime-main.js": "/IndianDrivingSchool/static/js/runtime-main.a182bbee.js",
     "runtime-main.js.map": "/IndianDrivingSchool/static/js/runtime-main.a182bbee.js.map",
     "static/js/2.1adb3415.chunk.js": "/IndianDrivingSchool/static/js/2.1adb3415.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.a182bbee.js",
     "static/js/2.1adb3415.chunk.js",
     "static/css/main.6f387c95.chunk.css",
-    "static/js/main.c29465bd.chunk.js"
+    "static/js/main.18064f3f.chunk.js"
   ]
 }
