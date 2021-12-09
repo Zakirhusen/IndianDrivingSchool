@@ -7,7 +7,7 @@ const AboutUs = () => {
     <>
       <div className="aboutUs-main-container">
         <div className="overview-main dflex align-items">
-          <h2>School Overview</h2>
+          <h2>Overview</h2>
           <div className="overview-sub dflex-all">
             <div className="overview-img">
               <img src={overviewImg1} alt="" />

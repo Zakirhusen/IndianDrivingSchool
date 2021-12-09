@@ -1031,13 +1031,14 @@ p.footer-para {
   color: rgba(80, 78, 78, 0.836);
 }
 .overview-sub .overview-text h3 {
-  color: rgb(80, 78, 78);
-
+  color: rgb(46, 45, 45);
   font-size: 2.3rem;
+  font-weight: lighter;
 }
 .overview-sub .overview-text p {
   margin-top: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
 }
 .overview-sub .overview-text ul {
   padding: 1rem;

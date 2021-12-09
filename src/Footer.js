@@ -1,5 +1,6 @@
 import React from "react";
 import logoFooter from "./images/logoWhite.png";
+import logoFooter1 from "./images/logo.png";
 
 const Footer = () => {
   return (
@@ -83,7 +84,7 @@ const Footer = () => {
             </div>
             <div className="contact-footer dflex-all  ">
               <div className="logo-img-footer-right">
-                <img src="./images/logo.png" alt="" />
+                <img src={logoFooter1} alt="" />
               </div>
               <div className="phone-footer address">
                 <a href="www.google.com">

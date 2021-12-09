@@ -4,6 +4,7 @@ import img from "./images/logo.png";
 
 const NavbarMenu = (props) => {
   
+  
   return (
     <>
       <div className={`navbar ${props.displayState}`}>
@@ -19,14 +20,14 @@ const NavbarMenu = (props) => {
             </NavLink>
           </li>
           <li>
-            <a href="#" data-hover="programs" onClick={()=>props.setToggleMenu()}>
+            <NavLink to="#" data-hover="programs" onClick={()=>props.setToggleMenu()}>
               programs
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" data-hover="testimonials" onClick={()=>props.setToggleMenu()}>
+            <NavLink to="#" data-hover="testimonials" onClick={()=>props.setToggleMenu()}>
               testimonials
-            </a>
+            </NavLink>
           </li>
           <li>
             <NavLink to="/contact" data-hover="contact" onClick={()=>props.setToggleMenu()}>
@@ -52,6 +53,10 @@ let setToggleMen=()=>{
   // console.log(toggleMenu)
 setToggleMenu(!toggleMenu)
 } 
+let setToggleMens=()=>{
+  // console.log(toggleMenu)
+setToggleMenu(false)
+} 
   return (
     <>
       <div className="navbar-main dflex align-items">
@@ -59,7 +64,7 @@ setToggleMenu(!toggleMenu)
           <div className="navbar-logo">
             <img src={img} alt="sdfsa" />
           </div>
-          <NavbarMenu displayState={width > 650 ? "active" : "inActive"} />
+          <NavbarMenu displayState={width > 650 ? "active" : "inActive"} setToggleMenu={setToggleMens} />
         </div>
         <div
           className={` toggle-menu-container dflex-all ${

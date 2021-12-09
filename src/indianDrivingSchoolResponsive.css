@@ -97,6 +97,11 @@
     font-size: 1.2rem;
     margin-left: 0;
   }
+
+  /* About us section */
+  .overview-main {
+    width: 92%;
+}
 }
 
 /* `````````````````````````````1080 Break Point````````````````````````````` */
@@ -157,8 +162,47 @@
   .section4-container .item:nth-child(8) {
     background: #f9fafb !important;
   }
+  /* About us section */
+  .overview-main {
+    width: 98%;
+    height: auto;
+}
+.overview-sub {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  border: var(--border);
+}
+.overview-sub .overview-img {
+  display: flex;
+  width: 80%;
+  /* border: var(--border); */
+  justify-content: center;
+}
+.overview-sub .overview-img img {
+  width: 95%;
+  /* height: 10rem; */
 }
 
+.overview-sub .overview-text {
+  width: 80%;
+}
+.aboutUs-work {
+  /* border: var(--border); */
+  width: 100%;
+  margin: 3rem auto;
+  height: 100%;
+}
+.aboutUs-work p {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+.aboutUs-work .aboutUs-img img {
+  width: 85%;
+  height: auto;
+}
+}
 /* `````````````````````````````990 Break Point````````````````````````````` */
 @media (max-width: 990px) {
   html {
@@ -253,6 +297,11 @@
       left: -110%;
     }
   }
+
+   /* About us section */
+   .overview-main {
+    width: 98%;
+}
 }
 
 /* `````````````````````````````850px Break Point````````````````````````````` */
