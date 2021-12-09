@@ -130,7 +130,7 @@ address:hover .bi-telephone-outbound.bi::before {
   justify-content: space-around;
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
   position: sticky;
-  top: -1.8rem;
+  top: -1rem;
 }
 .navbar-wrapper {
   height: 9rem;
@@ -192,10 +192,10 @@ address:hover .bi-telephone-outbound.bi::before {
 }
 .toggle-menu-container {
   height: 3rem;
-  width: 3rem;
+  width: 12%;
 }
 .toggle-menu-container .toggle-menu.menu-on i {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   /* border: var(--border); */
 }
@@ -203,7 +203,7 @@ address:hover .bi-telephone-outbound.bi::before {
   /* border: var(--border); */
   padding: 0 !important;
   margin: 0 !important;
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -386,9 +386,9 @@ address:hover .bi-telephone-outbound.bi::before {
 .total-data-items h4 {
   font-weight: 400;
 }
-/* .total-data div:nth-child(even):before {
+.total-data div:nth-child(even):before {
   background: none;
-} */
+}
 
 /* ``````````````````````````````Styling of section2 `````````````````````````````````*/
 .section2-container {

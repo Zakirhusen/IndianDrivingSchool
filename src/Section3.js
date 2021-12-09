@@ -1,4 +1,6 @@
 import React from "react";
+import wheel from "./images/wheel.png";
+
 
 const Section3 = () => {
   return (
@@ -11,10 +13,10 @@ const Section3 = () => {
         </div>
         <div className="limiter"></div>
         <div className=" wheels left-wheel">
-          <img src="./images/wheel.png" alt="" />
+          <img src={wheel} alt="" />
         </div>
         <div className=" wheels right-wheel">
-          <img src="./images/wheel.png" alt="" />
+          <img src={wheel} alt="" />
         </div>
       </div>
     </>

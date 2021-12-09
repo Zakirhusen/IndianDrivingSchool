@@ -1,4 +1,6 @@
 import React from "react";
+import logoFooter from "./images/logoWhite.png";
+
 const Footer = () => {
   return (
     <>
@@ -6,7 +8,7 @@ const Footer = () => {
         <div className="footer-item-container dflex-all">
           <div className="footer-item logo-footer dflex">
             <div className="logo-img-footer dflex-all">
-              <img src="./images/logoWhite.png" alt="" />
+              <img src={logoFooter} alt="" />
             </div>
             <p className="footer-para">
               We provide a reputable and professional service that aims to give

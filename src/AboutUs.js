@@ -1,4 +1,6 @@
 import React from "react";
+import overviewImg1 from "./images/img4.jpg" ;
+import overviewImg2 from "./images/img2.png" ;
 
 const AboutUs = () => {
   return (
@@ -8,7 +10,7 @@ const AboutUs = () => {
           <h2>School Overview</h2>
           <div className="overview-sub dflex-all">
             <div className="overview-img">
-              <img src="./images/img4.jpg" alt="" />
+              <img src={overviewImg1} alt="" />
             </div>
             <div className="overview-text dflex justify-content-space-bet flex-col">
               <h3>Affordable, Effective and Convenient Driving Lessons</h3>
@@ -40,7 +42,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="aboutUs-img dflex-all">
-            <img src="./images/img2.png" alt="" />
+            <img src={overviewImg2} alt="" />
           </div>
         </div>
 

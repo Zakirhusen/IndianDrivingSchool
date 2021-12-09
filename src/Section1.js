@@ -1,20 +1,50 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Section1 = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const updateDimensions = () => {
+    const windowWidth = window.innerWidth;
+    setWidth(windowWidth);
+  };
+  window.addEventListener("resize", updateDimensions);
 
   useEffect(() => {
-    let dataItems= document.querySelectorAll('.total-data-items');
-    let dataItemsLen=dataItems.length;
-    let i=0;
-    setInterval(() => {
-      dataItems.forEach(element => {
-        element.classList.remove('inActive')
+    let totalData = document.querySelector(".total-data");
+    let inter;
+    console.log("useeffect start");
+    let dataItems = document.querySelectorAll(".total-data-items");
+    if (width < 850) {
+      console.log();
+      let dataItemsLen = dataItems.length;
+      let i = 0;
+      inter = setInterval(() => {
+        // if resize window animation time and setInterval time becomes same
+        totalData.classList.remove("none");
+        dataItems.forEach((element) => {
+          element.classList.remove("inActive");
+        });
+        dataItems[i % dataItemsLen].classList.add("inActive");
+        if (width<550) {
+          dataItems[(i + 1) % dataItemsLen].classList.add("inActive");
+          dataItems[(i + 2) % dataItemsLen].classList.add("inActive");
+        } 
+        if(width<750) {
+          dataItems[(i + 1) % dataItemsLen].classList.add("inActive");
+        }
+        i++;
+      }, 4000);
+      return () => {
+        // if resize window animation time and setInterval time becomes same
+        clearInterval(inter);
+        totalData.classList.add("none");
+      };
+    }
+    else{
+      dataItems.forEach((element) => {
+        element.classList.remove("inActive");
       });
-      dataItems[i%dataItemsLen].classList.add('inActive')
-      dataItems[(i+1)%dataItemsLen].classList.add('inActive')
-      i++;
-    }, 4000);
-  }, [])
+    }
+  }, [width]);
   return (
     <>
       <div className="section1 dflex justify-items align-items">

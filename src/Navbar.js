@@ -1,33 +1,35 @@
 import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
+import img from "./images/logo.png";
 
 const NavbarMenu = (props) => {
+  
   return (
     <>
       <div className={`navbar ${props.displayState}`}>
         <ul className="nav-item-container justify-content-space-bet dflex align-items">
           <li>
-            <NavLink to="/" data-hover="home">
+            <NavLink to="/" data-hover="home" onClick={()=>props.setToggleMenu()}>
               home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" data-hover="about us">
+            <NavLink to="/about" data-hover="about us"  onClick={()=>props.setToggleMenu()}>
               about us
             </NavLink>
           </li>
           <li>
-            <a href="#" data-hover="programs">
+            <a href="#" data-hover="programs" onClick={()=>props.setToggleMenu()}>
               programs
             </a>
           </li>
           <li>
-            <a href="#" data-hover="testimonials">
+            <a href="#" data-hover="testimonials" onClick={()=>props.setToggleMenu()}>
               testimonials
             </a>
           </li>
           <li>
-            <NavLink to="/contact" data-hover="contact">
+            <NavLink to="/contact" data-hover="contact" onClick={()=>props.setToggleMenu()}>
               Contact
             </NavLink>
           </li>
@@ -37,10 +39,8 @@ const NavbarMenu = (props) => {
   );
 };
 
-// export default NavbarMenu
-
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false     );
+  const [toggleMenu, setToggleMenu] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
   const updateDimensions = () => {
     const windowWidth = window.innerWidth;
@@ -48,13 +48,16 @@ const Navbar = () => {
     // console.log(width)
   };
   window.addEventListener("resize", updateDimensions);
-
+let setToggleMen=()=>{
+  // console.log(toggleMenu)
+setToggleMenu(!toggleMenu)
+} 
   return (
     <>
       <div className="navbar-main dflex align-items">
         <div className="navbar-wrapper justify-content dflex align-items">
           <div className="navbar-logo">
-            <img src="./images/logo.png" alt="sdfsa" />
+            <img src={img} alt="sdfsa" />
           </div>
           <NavbarMenu displayState={width > 650 ? "active" : "inActive"} />
         </div>
@@ -71,7 +74,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <NavbarMenu displayState={width > 650 | !toggleMenu ? "inActive" : "active"} />
+      <NavbarMenu setToggleMenu={setToggleMen} displayState={width > 650 | !toggleMenu ? "inActive" : "active"} />
     </>
   );
 };
