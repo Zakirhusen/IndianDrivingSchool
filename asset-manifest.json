@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/IndianDrivingSchool/static/css/main.a6f997a4.chunk.css",
+    "main.css": "/IndianDrivingSchool/static/css/main.3f95fed6.chunk.css",
     "main.js": "/IndianDrivingSchool/static/js/main.91f6ff54.chunk.js",
     "main.js.map": "/IndianDrivingSchool/static/js/main.91f6ff54.chunk.js.map",
     "runtime-main.js": "/IndianDrivingSchool/static/js/runtime-main.a182bbee.js",
@@ -8,7 +8,7 @@
     "static/js/2.1adb3415.chunk.js": "/IndianDrivingSchool/static/js/2.1adb3415.chunk.js",
     "static/js/2.1adb3415.chunk.js.map": "/IndianDrivingSchool/static/js/2.1adb3415.chunk.js.map",
     "index.html": "/IndianDrivingSchool/index.html",
-    "static/css/main.a6f997a4.chunk.css.map": "/IndianDrivingSchool/static/css/main.a6f997a4.chunk.css.map",
+    "static/css/main.3f95fed6.chunk.css.map": "/IndianDrivingSchool/static/css/main.3f95fed6.chunk.css.map",
     "static/js/2.1adb3415.chunk.js.LICENSE.txt": "/IndianDrivingSchool/static/js/2.1adb3415.chunk.js.LICENSE.txt",
     "static/media/indianDrivingSchool.css": "/IndianDrivingSchool/static/media/citybg2.11b4b769.jpg",
     "static/media/bg2.407c6a32.png": "/IndianDrivingSchool/static/media/bg2.407c6a32.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.a182bbee.js",
     "static/js/2.1adb3415.chunk.js",
-    "static/css/main.a6f997a4.chunk.css",
+    "static/css/main.3f95fed6.chunk.css",
     "static/js/main.91f6ff54.chunk.js"
   ]
 }
