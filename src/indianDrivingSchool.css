@@ -1,12 +1,20 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Raleway:wght@300&family=Roboto:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400 !important;
+}
 body {
   font-family: "Roboto", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
 }
 /* html{
         font-size: 62.5%;
@@ -193,10 +201,14 @@ address:hover .bi-telephone-outbound.bi::before {
 .toggle-menu-container {
   height: 3rem;
   width: 12%;
+  margin-right: 1rem;
 }
 .toggle-menu-container .toggle-menu.menu-on i {
   font-size: 2.5rem;
-  font-weight: bold;
+}
+.toggle-menu-container .toggle-menu.menu-on i::before {
+  font-size: 2.5rem;
+  font-weight: bold !important;
   /* border: var(--border); */
 }
 .toggle-menu-container .toggle-menu.menu-off i {
@@ -216,11 +228,11 @@ address:hover .bi-telephone-outbound.bi::before {
   flex-direction: column;
   position: relative;
   width: 100%;
-  height:65vh;
+  height: 65vh;
   text-align: left;
   color: white;
   font-size: 5rem;
-  transition: all 03s linear;
+  transition: all 0.5s linear;
   animation: imgSlider 30s forwards infinite;
   position: relative;
   overflow: hidden;
@@ -512,7 +524,7 @@ address:hover .bi-telephone-outbound.bi::before {
   height: 100%;
 }
 
-/*````````````````````` Section3 Moving car Styling```````````````````*/
+/*````````````````````` Section3 Moving car Styling ```````````````````*/
 .section3-moving-car-container {
   height: 40rem;
   width: 100%;
@@ -573,11 +585,11 @@ address:hover .bi-telephone-outbound.bi::before {
 }
 .section3-moving-car-container .moving-car {
   position: absolute;
-  bottom: 3rem;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-40%);
-  height: 50%;
-  width: 45%;
+  height: 20rem;
+  width: 42%;
   background: url(./images/carObj.png) center center/contain no-repeat;
   /* border: var(--border); */
   /* background: red; */
@@ -585,34 +597,31 @@ address:hover .bi-telephone-outbound.bi::before {
   z-index: 1;
 }
 
-/* .section3-moving-car-container .moving-car img{
-      height: 100% ;
-      border: var(--border);
-      width: 100%;
-    } */
 .wheels {
   height: 4.5rem;
   width: 4.5rem;
+  border-radius: 50%;
   position: absolute;
   z-index: 3;
+  /* border: var(--border); */
+  bottom: 12.3%;
+  animation: wheelRotate 0.7s infinite linear;
 }
+
 .wheels img {
   height: 100%;
   width: 100%;
 }
 .wheels.right-wheel {
-  bottom: 95px;
-  left: 598px;
-  animation: wheelRotate 0.6s infinite linear;
+  left: 59%;
 }
 .wheels.left-wheel {
-  bottom: 95px;
-  left: 900px;
-  animation: wheelRotate 0.6s infinite linear;
+  left: 38.9%;
 }
 @keyframes wheelRotate {
   100% {
     transform: rotate(-360deg);
+    transform-origin: center;
   }
 }
 
@@ -671,6 +680,7 @@ address:hover .bi-telephone-outbound.bi::before {
   color: #09242b9a;
   line-height: 1.5rem;
   letter-spacing: 0.02rem;
+  font-family: "Raleway", sans-serif;
 }
 .section4-container .item .icon {
   height: 4rem;
@@ -808,6 +818,7 @@ address:hover .bi-telephone-outbound.bi::before {
   flex-direction: column;
   justify-content: space-evenly;
 }
+
 .price-table__feature-list li {
   list-style: none;
   display: flex;
@@ -815,8 +826,10 @@ address:hover .bi-telephone-outbound.bi::before {
   justify-content: center;
   margin: 0.2rem 0;
   height: 3rem;
+  font-family: "Raleway";
+  font-weight: 400;
   font-size: 1.1rem;
-  color: #969594;
+  color: #434343;
 }
 .price-table__feature-list li:nth-child(odd) {
   background-color: #f9fafb;
@@ -1005,7 +1018,7 @@ p.footer-para {
 }
 .overview-main h2 {
   font-size: 3.2rem;
-  font-weight: lighter;
+  font-weight: 400;
   margin: 2rem auto;
 }
 .overview-sub {
@@ -1062,6 +1075,8 @@ p.footer-para {
   margin: 3rem auto;
 }
 .aboutUs-work p {
+  margin: auto;
+  width: 80%;
   text-align: center;
   margin-bottom: 3rem;
   font-size: 1.1rem;
@@ -1070,7 +1085,7 @@ p.footer-para {
   width: 100%;
 }
 .aboutUs-work .aboutUs-img img {
-  width: 70%;
+  width: 90%;
   height: auto;
 }
 .aboutUs-statistics {
@@ -1084,7 +1099,7 @@ p.footer-para {
   margin: auto;
 }
 .aboutUs-statistics .statistics {
-  width: 80%;
+  width: 85%;
   justify-content: space-evenly;
   position: relative;
   flex-wrap: wrap;
@@ -1112,9 +1127,11 @@ p.footer-para {
 }
 .aboutUs-statistics .stat-item h3 {
   margin: 2rem 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: lighter;
   text-transform: uppercase;
   color: white;
+  text-align: center;
 }
 
 .aboutUs-statistics .stat-item i {
@@ -1173,20 +1190,22 @@ p.footer-para {
 
 /* ``````````````````````````````````````` Contact styling ``````````````````````````````````````*/
 .contact-main {
-  height: 100vh;
+  height: auto;
   width: 100%;
   /* border: var(--border); */
 }
 .contact-main h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: lighter;
   text-transform: capitalize;
   color: #3b3a3a;
   margin: 2rem 0;
+  margin-bottom: 3rem;
 }
 .contact {
   height: 80%;
   width: 80%;
+  align-items: flex-start;
   justify-content: space-evenly;
   /* border: var(--border); */
 }
@@ -1237,7 +1256,7 @@ textarea {
   margin: 10px;
   border-color: #d8d6d5;
   border-radius: 3px;
-  height: 25rem;
+  height: 10rem;
 }
 .contact-form .btn-section2 {
   margin: 2rem 0.5rem;

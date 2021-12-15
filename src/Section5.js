@@ -1,78 +1,35 @@
 import React, { useEffect, useState } from "react";
 
 const Section5 = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  const updateDimensions = () => {
-    const windowWidth = window.innerWidth;
-    setWidth(windowWidth);
-    // console.log(width)
-  };
-  window.addEventListener("resize", updateDimensions);
-  // let tableSlide = document.querySelectorAll(".price-table-container");
+  
   useEffect(() => {
-    let interval;
     let tableSlide = document.querySelectorAll(".price-table-container");
     console.log(tableSlide);
-    // let i = 1;
-    // if (width < 750) {
-      // interval = setInterval(() => {
-      //   tableSlide.forEach((slide, index) => {
-      //     slide.classList.add("inActive");
-      //   });
-      //   tableSlide[i % 3].classList.remove("inActive");
-      //   i++;
-      // }, 3000);
-      // tableSlide.forEach((element) => {
-      //   let animStop = () => {
-      //     // console.log("mouse hover");
-      //     clearInterval(interval);
-      //   };
-      //   element.addEventListener("mouseover", animStop);
-      // });
 
-      tableSlide.forEach((element) => {
-        let mouseInAnimStop = (e) => {
-          console.log(element);
-          console.log("mouse hover");
-          tableSlide.forEach((element) => {
-            element.classList.add("none");
-          });
-        };
-        let mouseOutAnimStart = () => {
-          // console.log(element);
-          // console.log("mouseout");
-      //     tableSlide.forEach((element) => {
-      //       element.classList.remove("none");
-      //   element.classList.remove('width-none')
-      // });
-          // i = 1;
-          // interval = setInterval(() => {
-          //   tableSlide.forEach((slide, index) => {
-          //     // slide.classList.add("inActive");
-          //   });
-          //   // tableSlide[i%3].classList.remove("inActive");
-          //   i++;
-          // }, 4000);
-        };
-        // tableSlide.forEach(element => {
+    tableSlide.forEach((element) => {
+      let mouseInAnimStop = (e) => {
+        console.log(element);
+        console.log("mouse hover");
+        tableSlide.forEach((element) => {
+          element.classList.add("none");
+        });
+      };
 
-        element.addEventListener("mouseover", (e) => {
-          // console.log(e);
-          console.log("mouse hover");
-          tableSlide.forEach((element) => {
-            element.classList.add("none");
-          });
-          element.classList.add('width-none')
+      element.addEventListener("mouseover", (e) => {
+        // console.log(e);
+        console.log("mouse hover");
+        tableSlide.forEach((element) => {
+          element.classList.add("none");
         });
-        element.addEventListener("mouseout", (e)=>{
-          tableSlide.forEach((element) => {
-            element.classList.remove("none");
-        element.classList.remove('width-none')
+        element.classList.add("width-none");
       });
+      element.addEventListener("mouseout", (e) => {
+        tableSlide.forEach((element) => {
+          element.classList.remove("none");
+          element.classList.remove("width-none");
         });
-        // });
       });
-    // }
+    });
   }, []);
   return (
     <>
@@ -123,7 +80,7 @@ const Section5 = () => {
             </div>
             <ul className="price-table__feature-list">
               <li className="price-table__feature-item">
-                <h3>Popular</h3>
+                <h3>POPULAR</h3>
               </li>
               <li className="price-table__feature-item">Full course theory</li>
               <li className="price-table__feature-item">Full driving course</li>

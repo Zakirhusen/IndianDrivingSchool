@@ -1,5 +1,6 @@
 import React from "react";
 import carImg  from "./images/bg2.png"
+import triangleImg  from "./images/triangleIcon.png"
 
 const Section2 = () => {
   return (
@@ -30,7 +31,7 @@ const Section2 = () => {
               </div>
               <div>
                 <span className="right-mark">&#10004;</span>Plate First driving
-                lessons from just $20
+                lessons from just &#8377;300
               </div>
             </div>
           </div>
@@ -46,7 +47,7 @@ const Section2 = () => {
           <p className='tel'>974-199-9828</p>
         </div>
         <div className="section2-bottom-icon">
-          <img src="./images/triangleIcon.png" alt="" />
+          <img src={triangleImg} alt="" />
         </div>
       </div>
     </>

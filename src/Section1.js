@@ -14,7 +14,7 @@ const Section1 = () => {
     console.log("useeffect start");
     let dataItems = document.querySelectorAll(".total-data-items");
     if (width < 850) {
-      console.log();
+      // console.log(dataItems);
       let dataItemsLen = dataItems.length;
       let i = 0;
       inter = setInterval(() => {
@@ -59,23 +59,24 @@ const Section1 = () => {
           </div>
           <div className="text-div-alt">
             <div className="">
-              <p>We learns even a noob</p>
-              <span className="color">learn </span> &
-              <span className="color"> practice</span> defencive driving
+              <p>We can learns even a noob</p>
+              We learns to
+              <span className="color"> Drive </span> &
+              <span className="color"> perfectly</span> 
             </div>
           </div>
         </div>
 
         <div className="total-data-container dflex-all">
           <div className="total-data dflex-all">
-            <div className="dflex-all total-data-items">
+        <div className={`dflex-all total-data-items ${width<750?'inActive':''}`}>
               <i className="fa fa-business-time"></i>
               <div className="data">
                 <h4>20</h4>
                 <p>working years</p>
               </div>
             </div>
-            <div className="dflex-all total-data-items">
+            <div className={`dflex-all total-data-items ${width<550?'inActive':''}`}>
               <i className="far fa-clock"></i>
               <div className="data">
                 <h4>3400</h4>
@@ -89,7 +90,7 @@ const Section1 = () => {
                 <p>license issued</p>
               </div>
             </div>
-            <div className="dflex-all total-data-items">
+            <div className={`dflex-all total-data-items ${width<(850)?'inActive':''}`}>
               <i className="fas fa-users"></i>
               <div className="data">
                 <h4>5</h4>
