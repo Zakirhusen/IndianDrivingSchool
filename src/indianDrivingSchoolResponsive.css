@@ -791,30 +791,31 @@
   .contact-form div p {
     font-size: 1.2rem;
     text-align: center;
-}
+  }
   .contact-form div {
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
   }
-  .contact-form input, .contact-form input:focus {
+  .contact-form input,
+  .contact-form input:focus {
     width: 98%;
   }
   textarea {
     width: 98%;
   }
 
-/* about us */
-.overview-sub .overview-img img {
-  width: 88%;
-}
-.overview-main h2 {
-  align-self: center;
-}
-.overview-sub .overview-text {
-  width: 92%;
-}
+  /* about us */
+  .overview-sub .overview-img img {
+    width: 90%;
+  }
+  .overview-main h2 {
+    align-self: center;
+  }
+  .overview-sub .overview-text {
+    width: 95%;
+  }
 
   /* footer section */
   .footer-item-container {
