@@ -102,7 +102,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="copyright">© 2021 Safe Drive Driving School.</p>
+        <p className="copyright">© {new Date().getFullYear()} Safe Drive Driving School.</p>
       </div>
     </>
   );
